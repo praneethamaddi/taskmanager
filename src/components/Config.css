@@ -1,0 +1,11 @@
+.config-page-background {
+    display: flex;                        
+    justify-content: center;              
+    align-items: center;                  
+    height: 100vh;                        
+    padding: 20px;                        
+    background-image: url("C:\Users\johit\OneDrive\Documents\images.jpg"); /* Replace with your image URL */
+    background-size: cover;               
+    background-position: center;          
+    background-repeat: no-repeat;         
+}

@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: linear-gradient(90deg, #3a007d, #d639cd);
+  padding: 1rem;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex; /* Align logo with other navbar items */
+  align-items: center; /* Center the logo */
+  background-size: contain; /* Ensure the logo fits nicely */
+  background-repeat: no-repeat; /* Prevent repeating */
+  width: 110px; /* Set width for the logo */
+  height: 110px; /* Set height for the logo */
+  margin-right: 10px; /* Space between logo and text (if any) */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-right: 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.logout-button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem; /* Added padding for better appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove border for a cleaner look */
+}
+
+.logout-button:hover {
+  background-color: #f0f0f0; /* Change color on hover */
+}
+.logo {
+  width: 140px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between logo and brand name */
+}

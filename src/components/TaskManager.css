@@ -1,0 +1,169 @@
+.task-manager {
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background color */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+}
+
+.current-time {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.task-form-card {
+    background-color: rgba(106, 76, 141, 0.9); /* Adjust transparency here */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px; /* Space between form card and task list */
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.task-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-form button:hover {
+    background-color: #0056b3;
+}
+
+.task-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task-card {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px);
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Dynamic colors based on the index */
+.task-card.color-0 {
+    background-color: #6f42c1; /* Purple */
+}
+
+.task-card.color-1 {
+    background-color: #20c997; /* Teal */
+}
+
+.task-card.color-2 {
+    background-color: #fd7e14; /* Orange */
+}
+
+.task-card.color-3 {
+    background-color: #dc3545; /* Red */
+}
+
+/* Additional colors can be added as needed */
+.task-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.task-buttons button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-buttons button:hover {
+    background-color: #5a6268;
+}
+
+.section-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.section-buttons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.section-buttons button.active {
+    background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .task-form input,
+    .task-form textarea,
+    .task-form select {
+        width: 80%;
+    }
+
+    .task-card {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

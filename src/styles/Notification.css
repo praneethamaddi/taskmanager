@@ -1,0 +1,8 @@
+.notification {
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #e7f3ff;
+    color: #007bff;
+    margin: 10px 0;
+}

@@ -1,0 +1,108 @@
+.notepad {
+    padding: 20px;
+    background-color: #ffffff; /* Soft light background for the entire page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.input-card {
+    background-color: rgba(100, 100, 143, 0.533); /* Slightly transparent white for the input card */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* Limit width for better appearance */
+    margin-bottom: 20px; /* Space below input card */
+}
+
+.input-card textarea {
+    width: 100%; /* Full width for textarea */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+    height: 100px; /* Set a height for better visibility */
+}
+
+.input-card button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-card button:hover {
+    background-color: #0056b3;
+}
+
+.note-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow notes to wrap */
+    justify-content: center; /* Center align notes */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit width for better layout */
+}
+
+.note-card {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(40% - 20px); /* 3 notes per row */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.note-card:hover {
+    transform: scale(1.02); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.note-card h3 {
+    margin-top: 0; /* No margin for the title */
+}
+
+.note-card button {
+    margin-top: 10px; /* Space above buttons */
+    padding: 8px 12px;
+    border: none;
+    background-color: #6c757d; /* Grey color for action buttons */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-card button:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .note-card {
+        width: calc(48% - 20px); /* 2 notes per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .note-card {
+        width: calc(100% - 20px); /* 1 note per row on mobile */
+    }
+}

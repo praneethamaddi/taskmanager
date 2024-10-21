@@ -1,0 +1,137 @@
+/* CalendarPage.css */
+
+.calendar-page {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light, calming background color */
+    min-height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-container {
+    margin: 20px 0;
+}
+
+.custom-calendar {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f0fff0; /* Light color for a clean calendar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-calendar .react-calendar__tile--active {
+    background-color: #4caf50 !important; /* Active date color */
+    color: white;
+    border-radius: 8px; /* Rounded corners for active date */
+}
+
+.custom-calendar .react-calendar__tile--now {
+    background-color: #ffeb3b !important; /* Current date color */
+    color: black;
+    border-radius: 8px; /* Rounded corners for today's date */
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.event-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none; /* Prevent resizing */
+    transition: border-color 0.3s;
+}
+
+.event-form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.event-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+    background-color: #0056b3;
+}
+
+.event-list {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.event-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there are many events */
+    justify-content: center;
+    gap: 20px; /* Space between event cards */
+}
+
+.event-card {
+    background-color: #e0f7fa; /* Light Cyan for event cards */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Width for event cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+    position: relative; /* Allows positioning of delete/edit buttons */
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.event-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.event-card button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+}
+
+.event-card button:hover {
+    background-color: #e60000;
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Style for marked dates */
+.event-marked {
+    background-color: #ffe0b2 !important; /* Light Orange */
+    border: 2px solid #ff9800 !important; /* Orange */
+    border-radius: 50%;
+}

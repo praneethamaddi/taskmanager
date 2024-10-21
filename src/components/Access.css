@@ -1,0 +1,47 @@
+.access-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("C:\Users\johit\OneDrive\Documents\get-inspired-travel-journaling-1-16x9_19841a5e2751462ba1f483cbeb55032b.jpg");
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+}
+
+.card {
+    background: white; /* Card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px; /* Fixed width for the card */
+    text-align: center; /* Center text within the card */
+}
+
+input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+button {
+    width: 100%; /* Full width for buttons */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.switch-btn {
+    background: none; /* No background for switch button */
+    border: none; /* No border */
+    color: #007BFF; /* Blue text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: underline; /* Underlined text */
+}

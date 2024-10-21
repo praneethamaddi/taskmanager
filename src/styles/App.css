@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
